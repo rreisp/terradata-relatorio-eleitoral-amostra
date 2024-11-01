@@ -1,0 +1,348 @@
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+    height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+#floating-panel {
+    position: absolute;
+    right: 0px;
+    z-index: 5;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Roboto','sans-serif';
+    line-height: 30px;
+    display: block;
+    background-color: white;
+    height: 100vh; 
+}
+
+#floating-panel span {
+    font-size: 33px;
+}
+
+#floating-panel b {
+    font-size: 15px;
+}
+
+#floating-panel #num {
+    text-align: center; 
+    padding: 20px;
+    font-size: 33px;
+    font-weight: bold;
+    background: #fff;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.modal-body {
+    max-height: calc(100vh - 210px);  overflow-y: auto; overflow-x: hidden;
+    padding-top:0px;
+    border: 0px;
+}
+
+.modal-content {
+    margin-bottom: 0px;
+}
+
+.modal-header {
+    padding-bottom: 0px;
+}
+
+table { width: 100%; font-size: 10px; }
+table th {background: yellow; font-size: 125%; border: 1px #fff solid; padding-left: 2px;}
+table td { border: 1px #fff solid; padding-left: 5px; vertical-align: top; }
+table:first-child { background-color: yellow; }
+.odd { background-color: #fff; }
+.even { background-color: #D3FFD1; }
+
+#generalStuff th { background: yellow; border: 1px #fff solid; padding-right:1px; }
+
+#me td {
+    vertical-align: top;
+    color: blue;
+    font-weight: bold;
+}
+
+.elected td {
+    vertical-align: top;
+    font-weight: bold;
+    background: #ffefa8 !important;
+}
+
+.module:nth-child(4n) {
+    margin-right: 0;
+}
+
+#image {
+    width: 180px;
+}
+
+button {
+    width: 180px;
+    height: 37px;
+    background-color: transparent;
+    border: transparent;
+    text-align: center;
+    font-size: 13px;
+    margin-top:1px;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #eeee;
+}
+#bt6:hover, #bt5:hover, #bt0:hover, #bt7:hover{
+    background-color: #eeee;
+}
+
+select {
+    width: 180px;
+    height: 37px;
+    border: transparent;
+    font-size: 13px;
+    margin-top:1px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#bt0{ background-image: url('../img/map.png'); background-repeat: no-repeat; background-color: #fff; background-position: 5% 50%; padding-left:20px;}
+#bt1{ background-image: url('../img/kernel.png'); background-repeat: no-repeat; background-position: 5% 50%; padding-left:40px;}
+#bt2{ background-image: url('../img/color.png'); background-repeat: no-repeat; background-position: 5% 50%; padding-left:30px;}
+#bt3{ background-image: url('../img/radius.png'); background-repeat: no-repeat; background-position: 5% 50%; padding-left:40px;}
+#bt4{ background-image: url('../img/alpha.png'); background-repeat: no-repeat; background-position: 5% 50%; padding-left:30px;}
+#bt5{ background-image: url('../img/sections.png'); background-repeat: no-repeat; background-color: #fff; background-position: 5% 50%; padding-left:20px;}
+#bt6{ background-image: url('../img/list.png'); background-repeat: no-repeat; background-color: #fff; background-position: 5% 50%; padding-left:20px;}
+#bt7{ background-image: url('../img/help.png'); background-repeat: no-repeat; background-color: #fff; background-position: 5% 50%; padding-left:20px;}
+
+/******************************************************/
+
+ul.tab {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+/* Float the list items side by side */
+ul.tab li {float: left; border: 1px solid #ccc; border-bottom: 0px; margin-right: 2px; width: 16%; text-align: center;}
+
+/* Style the links inside the list items */
+ul.tab li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 9px;
+    font-weight: bold;
+    width: 100%;
+}
+
+/* Change background color of links on hover */
+ul.tab li a:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+ul.tab li a:focus, .active {
+    background-color: #ccc;
+    color: blue;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    /*border: 1px solid #ccc;*/
+    border-top: none;
+}
+
+#myModal .modal-dialog  {width:75% !important;}
+
+#leg1 {
+    max-width: 75%;    
+}
+
+#leg1 td {
+    background: #fff;
+    text-align: left;
+    padding-bottom: 7px;
+    padding-left: 10px;   
+}
+
+#leg1 td:nth-child(2), #leg1 td:nth-child(4), #leg1 td:nth-child(6){
+    padding-right: 5px;
+}
+
+#leg1 tr:nth-child(2) td:nth-child(1){
+    background: #59922B;
+    width: 5%;
+}
+
+#leg1 tr:nth-child(2) td:nth-child(3){
+    background: #D17905;
+    width: 5%;
+}
+
+#leg1 tr:nth-child(2) td:nth-child(5){
+    background: #F05B4F;
+    width: 5%;
+}
+
+#leg1 tr:nth-child(3) td:nth-child(1){
+    background: #453D3F;
+    width: 5%;
+}
+
+#leg1 tr:nth-child(3) td:nth-child(3){
+    background: #F4C63D;
+    width: 5%;
+}
+
+#leg1 tr:nth-child(3) td:nth-child(5){
+    background: #D70206;
+    width: 5%;
+}
+
+#leg2 {
+    max-width: 65%;    
+}
+
+#leg2 td {
+    background: #fff;
+    text-align: left;
+    padding-bottom: 7px;
+    padding-left: 10px;   
+}
+
+#leg2 td:nth-child(2), #leg2 td:nth-child(4) {
+    padding-right: 5px;
+}
+
+#leg2 tr:nth-child(2) td:nth-child(1){
+    background: #D17905;
+    width: 5%;
+}
+
+#leg2 tr:nth-child(2) td:nth-child(3){
+    background: #F05B4F;
+    width: 5%;
+}
+
+#leg2 tr:nth-child(3) td:nth-child(1){
+    background: #F4C63D;
+    width: 5%;
+}
+
+#leg2 tr:nth-child(3) td:nth-child(3){
+    background: #D70206;
+    width: 5%;
+}
+
+#container {
+    width: 100%;
+    text-align: center;
+}
+
+.legTitle {
+    text-align: left;
+    font-weight: bold;
+    font-size: 125%;
+    background: #fff !important;
+}
+
+line {
+    min-height: 15px;
+}
+
+#legend { font-family: Arial, sans-serif; background: #fff; padding: 7px; margin: 7px; border: 3px double #ccc; } 
+#legend h6 { font-weight: bold; margin-top: 0; } 
+#legend img { vertical-align: middle; padding-bottom: 1px;}
+
+.toast-top-center {
+    top: 15%;
+    left:25%;
+    right: 15%;
+    bottom: 15%;
+}
+.toast {
+    opacity: 1 !important;
+}
+
+/* =Preloader */
+body {
+    overflow: hidden;
+}
+
+
+/* Preloader */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    /* change if the mask should have another color then white */
+    z-index: 99;
+    /* makes sure it stays on top */
+}
+
+#status {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    /* centers the loading animation horizontally one the screen */
+    top: 50%;
+    /* centers the loading animation vertically one the screen */
+    background-image: url(../img/loader.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: -100px 0 0 -100px;
+    text-align: center;
+    /* is width and height divided by two */
+}
+
+.ct-label {
+    font-size: 75% !important;
+}
+
+.cEven {
+    border: 1px dashed #27D629;
+}
+.cOdd {
+    border: 1px dotted #27D629;
+}
+
+.close-btn{
+    position: absolute;
+    padding: 5px;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    right: 10px;
+    top: 60px;
+    z-index: 2;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 1px 4px -1px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.img-btn{
+    width: 23px;
+    height: 23px;
+}
