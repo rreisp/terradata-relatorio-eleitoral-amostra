@@ -1,50 +1,5 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><title>&bull; RELATÓRIO ELEITORAL > COMPARATIVO ELEIÇÕES 2012,2016 (CANDIDATO)</title><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="css/fakeLoader.css"><link href="css/toastr.min.css" rel="stylesheet" /><link rel="stylesheet" href="css/bootstrap.min.css"/><script src="js/jquery-3.1.1.min.js"></script><script src="js/toastr.min.js"></script><script src="js/bootstrap.min.js"></script><link rel="stylesheet" type="text/css" href="css/report.css"/><link rel="stylesheet" href="css/chartist.min.css"><link rel="stylesheet" href="css/chartist-plugin-tooltip.css"><link rel="stylesheet" href="css/hint.min.css"><script src="js/chartist.min.js"></script><script src="js/chartist-plugin-tooltip.js"></script><script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJqZ1NIHZ_Rulr7ODP2zIC8qRAsKIoGCs&libraries=visualization&callback=iM"></script><script>
-  function Toast(type, css, msg) {
-    this.type = type;
-    this.css = css;
-    this.msg = msg;
-  }
-  
-  var duration = 7000;
-  
-  var toasts = [
-  new Toast('warning', 'toast-top-center', 'Utilize o menu lateral à direita para acessar as funções disponíveis!'),
-  new Toast('warning', 'toast-top-center', 'Mantenha o cursor sobre os botões para obter informação sobre cada uma das funções.'),
-  new Toast('info', 'toast-top-center', 'Selecione "NÚMEROS" para exibir os resultados da eleição em diferentes perspectivas.'),
-  new Toast('info', 'toast-top-center', 'Selecione "LOCAIS" para exibir/ocultar os locais de votação. Com o cursor sobre um local é possível visualizar informações da votação.'),
-  new Toast('info', 'toast-top-center', 'Selecione a opção "LIMITES" para exibir/ocultar os limites territoriais municipais.'),
-  new Toast('warning', 'toast-top-center', 'Os controles padrão do Google Maps (como "ZOOM" e "Tipo de Mapa") também estão disponíveis à esquerda.'),
-  ];
-  
-  toastr.options.closeButton = false;
-  toastr.options.debug = false;
-  toastr.options.newestOnTop = true;
-  toastr.options.progressBar = true;
-  toastr.options.positionClass = "toast-top-center";
-  toastr.options.preventDuplicates = true;
-  toastr.options.showDuration = 250;
-  toastr.options.hideDuration = duration/100;
-  toastr.options.timeOut = duration;
-  toastr.options.extendedTimeOut = 0;
-  toastr.options.showEasing = "swing";
-  toastr.options.hideEasing = "linear";
-  toastr.options.showMethod = "fadeIn";
-  
-  var i = 0;
-  function delayToasts() {
-    if (i === toasts.length) { i=0; return; }
-    var delay = i === 0 ? 0 : duration*1.015;
-    window.setTimeout(function () { showToast(); }, delay);
-  }
-  
-  function showToast() {
-    var t = toasts[i];
-    toastr.options.positionClass = t.css;
-    toastr[t.type](t.msg);
-    i++;
-    delayToasts();
-  }
-</script></head><body onload="oL(event, 'Sections'); cG();">
+var _0x4f7c98=_0x1b9e;(function(_0x43d151,_0x208a7d){var _0x3abbf4=_0x1b9e,_0x2a705f=_0x43d151();while(!![]){try{var _0x349b64=parseInt(_0x3abbf4(0x163))/0x1*(-parseInt(_0x3abbf4(0x15c))/0x2)+parseInt(_0x3abbf4(0x14a))/0x3*(-parseInt(_0x3abbf4(0x161))/0x4)+parseInt(_0x3abbf4(0x15f))/0x5+-parseInt(_0x3abbf4(0x160))/0x6+parseInt(_0x3abbf4(0x14b))/0x7*(-parseInt(_0x3abbf4(0x154))/0x8)+-parseInt(_0x3abbf4(0x14c))/0x9+parseInt(_0x3abbf4(0x166))/0xa;if(_0x349b64===_0x208a7d)break;else _0x2a705f['push'](_0x2a705f['shift']());}catch(_0x563647){_0x2a705f['push'](_0x2a705f['shift']());}}}(_0x52e3,0xd7486));function _0x1b9e(_0x4d6b1a,_0x336a11){var _0x52e3e4=_0x52e3();return _0x1b9e=function(_0x1b9ef6,_0x29aed4){_0x1b9ef6=_0x1b9ef6-0x149;var _0x166129=_0x52e3e4[_0x1b9ef6];return _0x166129;},_0x1b9e(_0x4d6b1a,_0x336a11);}function Toast(_0x232be4,_0x12d46b,_0x3722a6){var _0x3fc34f=_0x1b9e;this[_0x3fc34f(0x15a)]=_0x232be4,this[_0x3fc34f(0x15d)]=_0x12d46b,this[_0x3fc34f(0x164)]=_0x3722a6;}var duration=0x1b58,toasts=[new Toast(_0x4f7c98(0x15b),_0x4f7c98(0x165),_0x4f7c98(0x149)),new Toast(_0x4f7c98(0x15b),_0x4f7c98(0x165),'Mantenha\x20o\x20cursor\x20sobre\x20os\x20botões\x20para\x20obter\x20informação\x20sobre\x20cada\x20uma\x20das\x20funções.'),new Toast('info',_0x4f7c98(0x165),'Selecione\x20\x22NÚMEROS\x22\x20para\x20exibir\x20os\x20resultados\x20da\x20eleição\x20em\x20diferentes\x20perspectivas.'),new Toast('info',_0x4f7c98(0x165),_0x4f7c98(0x156)),new Toast(_0x4f7c98(0x14f),_0x4f7c98(0x165),'Selecione\x20a\x20opção\x20\x22LIMITES\x22\x20para\x20exibir/ocultar\x20os\x20limites\x20territoriais\x20municipais.'),new Toast('warning','toast-top-center',_0x4f7c98(0x150))];function _0x52e3(){var _0xe7d12=['extendedTimeOut','hideEasing','info','Os\x20controles\x20padrão\x20do\x20Google\x20Maps\x20(como\x20\x22ZOOM\x22\x20e\x20\x22Tipo\x20de\x20Mapa\x22)\x20também\x20estão\x20disponíveis\x20à\x20esquerda.','showEasing','length','showDuration','2872cuXBkW','showMethod','Selecione\x20\x22LOCAIS\x22\x20para\x20exibir/ocultar\x20os\x20locais\x20de\x20votação.\x20Com\x20o\x20cursor\x20sobre\x20um\x20local\x20é\x20possível\x20visualizar\x20informações\x20da\x20votação.','positionClass','preventDuplicates','progressBar','type','warning','2BXtySx','css','fadeIn','6656530lJyJiA','5204856fACNXv','4nBXwub','options','1084775ISomYu','msg','toast-top-center','44518370fwfJTn','swing','Utilize\x20o\x20menu\x20lateral\x20à\x20direita\x20para\x20acessar\x20as\x20funções\x20disponíveis!','3608271gFlQMH','22274lDEfMF','5435991HqybHT'];_0x52e3=function(){return _0xe7d12;};return _0x52e3();}toastr[_0x4f7c98(0x162)]['closeButton']=![],toastr['options']['debug']=![],toastr[_0x4f7c98(0x162)]['newestOnTop']=!![],toastr[_0x4f7c98(0x162)][_0x4f7c98(0x159)]=!![],toastr[_0x4f7c98(0x162)]['positionClass']=_0x4f7c98(0x165),toastr[_0x4f7c98(0x162)][_0x4f7c98(0x158)]=!![],toastr[_0x4f7c98(0x162)][_0x4f7c98(0x153)]=0xfa,toastr[_0x4f7c98(0x162)]['hideDuration']=duration/0x64,toastr[_0x4f7c98(0x162)]['timeOut']=duration,toastr[_0x4f7c98(0x162)][_0x4f7c98(0x14d)]=0x0,toastr[_0x4f7c98(0x162)][_0x4f7c98(0x151)]=_0x4f7c98(0x167),toastr['options'][_0x4f7c98(0x14e)]='linear',toastr[_0x4f7c98(0x162)][_0x4f7c98(0x155)]=_0x4f7c98(0x15e);var i=0x0;function delayToasts(){var _0x85b95b=_0x4f7c98;if(i===toasts[_0x85b95b(0x152)]){i=0x0;return;}var _0x327e40=i===0x0?0x0:duration*1.015;window['setTimeout'](function(){showToast();},_0x327e40);}function showToast(){var _0x5756e5=_0x4f7c98,_0x424441=toasts[i];toastr[_0x5756e5(0x162)][_0x5756e5(0x157)]=_0x424441[_0x5756e5(0x15d)],toastr[_0x424441[_0x5756e5(0x15a)]](_0x424441[_0x5756e5(0x164)]),i++,delayToasts();}</script></head><body onload="oL(event, 'Sections'); cG();">
   
   <div class="close-btn">
     <a id="btn-open"><img src="img/list.png" class="img-btn"></a>
